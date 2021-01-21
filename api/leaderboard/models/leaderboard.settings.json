@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaderboards",
+  "info": {
+    "name": "leaderboard",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "published_at",
+      "_id",
+      "__v"
+    ]
+  },
+  "attributes": {
+    "score": {
+      "type": "integer"
+    },
+    "time": {
+      "type": "integer"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

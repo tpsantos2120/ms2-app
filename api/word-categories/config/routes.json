@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/word-categories",
+      "handler": "word-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/word-categories/count",
+      "handler": "word-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/word-categories/:id",
+      "handler": "word-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/word-categories",
+      "handler": "word-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/word-categories/:id",
+      "handler": "word-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/word-categories/:id",
+      "handler": "word-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

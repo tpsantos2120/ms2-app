@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "word_categories",
+  "info": {
+    "name": "word Categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": ["createdAt", "updatedAt", "published_at", "_id","__v"]
+
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "words": {
+      "collection": "words",
+      "via": "word_categories",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_users",
+  "info": {
+    "name": "Game Users",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "published_at",
+      "_id",
+      "__v"
+    ]
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "unique": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "users_permissions_role": {
+      "plugin": "users-permissions",
+      "model": "role"
+    }
+  }
+}
