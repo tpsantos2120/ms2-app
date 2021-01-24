@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "puzzles",
+  "info": {
+    "name": "puzzles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "published_at",
+      "_id",
+      "__v"
+    ]
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "word": {
+      "type": "string"
+    }
+  }
+}

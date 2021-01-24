@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/word-categories",
-      "handler": "word-categories.find",
+      "path": "/puzzles",
+      "handler": "puzzles.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/word-categories/count",
-      "handler": "word-categories.count",
+      "path": "/puzzles/count",
+      "handler": "puzzles.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/word-categories/:id",
-      "handler": "word-categories.findOne",
+      "path": "/puzzles/:id",
+      "handler": "puzzles.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/word-categories",
-      "handler": "word-categories.create",
+      "path": "/puzzles",
+      "handler": "puzzles.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/word-categories/:id",
-      "handler": "word-categories.update",
+      "path": "/puzzles/:id",
+      "handler": "puzzles.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/word-categories/:id",
-      "handler": "word-categories.delete",
+      "path": "/puzzles/:id",
+      "handler": "puzzles.delete",
       "config": {
         "policies": []
       }
